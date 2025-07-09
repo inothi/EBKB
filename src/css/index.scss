@@ -1,0 +1,23 @@
+* {
+    padding: 0;
+    margin: 0;
+    font-size: 1rem;
+}
+
+.head {
+    margin: 1rem;
+    font-size: 2rem;
+}
+
+label {
+    display: grid;
+    font-size: 1.2rem;
+    padding: .5rem;
+}
+
+input {
+    padding: .5rem;
+    border: .2rem solid orangered;
+    border-radius: 1.5rem;
+    min-width: 250px;
+}

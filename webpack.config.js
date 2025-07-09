@@ -20,7 +20,7 @@ module.exports = {
         static: {
         directory: path.join(__dirname, "dist"),
         },
-        port: 8000
+        port: 9000
     },
     module: {
         rules: [
@@ -64,12 +64,12 @@ module.exports = {
             template: "./src/index.html",
             inject: true
         }),
-        new HtmlWebpackPlugin({
+        /* new HtmlWebpackPlugin({
             template: './src/kontakt.html',
             inject: true,
             chunks: ['kontakt'],
             filename: 'kontakt.html'
-        }),
+        }), */
         new MiniCssExtractPlugin(),
         new CopyWebpackPlugin({
             patterns: [
