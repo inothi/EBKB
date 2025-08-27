@@ -2,11 +2,65 @@
     padding: 0;
     margin: 0;
     font-size: 1rem;
+    font-family: 'Montserrat';
 }
 
-.head {
-    margin: 1rem;
-    font-size: 2rem;
+.widescreen-main-header {
+    margin: 0;
+    padding: 0;
+    width: auto;
+    height: 6.25rem;
+    background-color: whitesmoke;
+}
+
+.main-header {
+    display: flex;
+    margin: 0;
+    padding: 0;
+    max-width: 75rem;
+    height: 6.25rem;
+    margin: 0 auto;
+    background-color: lightgray;
+    box-shadow: 0 0 .9rem .15px black;
+    
+    .main-header-logo {
+        display: flex;
+        margin: 1rem;
+        height: auto;
+        padding: 0;
+        justify-content: center;
+    }
+}
+
+.main-header-nav {
+    display: flex;
+    margin: auto 2rem;
+    padding: 0;
+    justify-content: right;
+    width: 100%;
+
+    .main-header-nav-link {
+        display: flex;
+        margin: .5rem;
+        width: auto;
+        height: 100%;
+
+        a {
+            color: rgb(115, 115, 115);
+            font-weight: 600;
+            margin: 0 2rem;
+            padding: .5rem;
+            text-decoration: none;
+            text-shadow: 0 .15rem .2rem whitesmoke;
+            transition: all .2s;
+
+            &:hover {
+                color: black;
+                border-radius: .7rem;
+                transition: all .2s;
+            }
+        }
+    }
 }
 
 label {
@@ -19,5 +73,5 @@ input {
     padding: .5rem;
     border: .2rem solid orangered;
     border-radius: 1.5rem;
-    min-width: 250px;
+    min-width: 500px;
 }
